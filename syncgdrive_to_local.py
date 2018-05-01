@@ -25,8 +25,6 @@ gauth.SaveCredentialsFile("mycreds.txt")
 
 drive = GoogleDrive(gauth)
 
-test_foldername = '000b84f8-a089-4ae4-afa3-154d3f980983'
-
 query_string = "'root' in parents and mimeType = 'application/vnd.google-apps.folder' and trashed=false" 
 file_list = drive.ListFile({'q': query_string}).GetList()
 
